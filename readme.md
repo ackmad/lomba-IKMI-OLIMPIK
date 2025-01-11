@@ -12,3 +12,5 @@
 #744D31 Bold Text
 #BB9D88 Smooth Color
 #DFD0C6 Second color
+
+>> TEST
