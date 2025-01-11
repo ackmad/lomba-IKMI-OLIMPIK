@@ -1,0 +1,235 @@
+/* Root */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap');
+
+@font-face {
+    font-family: 'parslay';
+    src: url('/assets/font/parslay/Parslay-Demo.otf') format('truetype');
+}
+
+:root {
+    --warna-utama: #744D31;
+    --warna-latar: #EFE8E3;
+    --warna-utama-muda: #BB9D88;
+    --warna-kedua: #DFD0C6;
+
+    --font-DM-display: "DM Serif Display", serif;
+    --font-DM-text: "DM Serif Text", serif;
+    --font-DM-sans: "DM Sans", serif;
+    --font-raleway: "Raleway", serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--warna-latar);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: var(--font-DM-sans);
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.df{
+    display: flex;
+}
+
+.container{
+    padding: 10% 5%;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #744D31;
+    border: none;
+    transition: .1s all ease;
+    cursor: pointer;
+    display: block;
+}
+
+.btn:hover{
+    transform: scale(1.15);
+}
+
+/* Start Navbar */
+
+.navbar{
+    background-color: #EFE8E3;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-menus{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.nav-menus li{
+    padding: 10px;
+    
+    a{
+        padding: 10px;
+        text-decoration: none;
+        color: #744D31;
+    }
+}
+
+/* End Navbar */
+
+/* Start Hero Section */
+
+#hero-section{
+    height: 95vh;
+    background-image: url("../assets/images/bg-Header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+}
+
+.flowText{
+    position: absolute;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff86;
+    font-family: "Raleway", serif;
+}
+
+.flowAni-1{
+    top: 20%;
+    left: -10%;
+
+}
+
+.flowAni-2{
+    top: 40%;
+    right: -10%;
+
+}
+
+.title-hero{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'parslay';
+    margin-top: 20%;
+}
+
+.parag-hero{
+    font-family: "Reenie Beanie", serif;
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.btn-bookNow{
+    margin-top: 10%;
+    font-size: 15px;
+    background-color: #AB8D77;
+    margin: 0px auto;
+}
+
+.svg-hero{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+
+/* End Hero Section */
+
+/* Start Tentang Kami */
+
+.title-tentang{
+    font-size: 30px;
+    color: var(--warna-utama);
+    font-family: var(--font-DM-display);
+    margin-bottom: 10px;
+}
+
+.png-line{
+    display: block;
+    margin: 0 auto;
+    width: 5px;
+    margin-top: -100px;
+    margin-bottom: 10px;
+}
+
+.parag-tentang{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--warna-utama-muda);
+    font-family: var(--font-DM-text);
+}
+
+.desc-tentang{
+    gap: 30px;
+    color: var(--warna-utama-muda);
+    margin-top: 40px;
+
+    p{
+        font-family: var(--font-DM-text);
+        font-size: 20px;
+    }
+}
+
+.section-organizer{
+    width: 100%;
+    height: 300px;
+    padding: 15px 5%;
+    background-color: var(--warna-kedua);
+    /* overflow: auto; */
+    z-index: 3;
+    position: relative;
+}
+
+.section-organizer img{
+    position: absolute;
+    top: -50px;
+}
+
+.analisy-grids{
+    margin-left: 35%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid-text{
+    height: 100px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.grid-text h4{
+    font-size: 25px;
+    font-family: var(--font-raleway);
+    color: var(--warna-utama);
+    font-weight: 700;
+}
+.grid-text h3{
+    font-size: 25px;
+    font-family: var(--font-raleway);
+    color: var(--warna-utama);
+    font-weight: 100;
+}
+
+/* End Tentang Kami */
