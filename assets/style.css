@@ -685,7 +685,7 @@ hr {
 
 .tomyweb {
     color: var(--warna-utama);
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 /* End Footer */
@@ -780,12 +780,28 @@ hr {
         font-size: 15px;
     }
 }
-@media only screen and (max-width: 425px) {
 
-}
-@media only screen and (max-width: 375px) {
-
-}
-@media only screen and (max-width: 320px) {
-
+@media only screen and (max-width: 360px) {
+    .png-bungaCantik-1{
+        
+        display: none;
+    }
+    .navbar{
+        width: 360px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .png-bungaCoklat-2{
+        opacity: 0.3;
+    }
+    .png-bungaCoklat-4{
+        transform: translateX(-100px);
+    }
+    .png-bungaCantik-2{
+        transform: translateX(200px);
+    }
+    .logo-mobile{
+        transform: translateX(-200px);
+    }
 }
