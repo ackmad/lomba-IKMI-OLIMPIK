@@ -1,32 +1,32 @@
 .animToLeft{
-    animation: autoSlideToLeft 20s ease-in;
+    animation: autoSlideToLeft 20s infinite ease-in-out;
 }
 @keyframes autoSlideToLeft {
     0%{
-        transform: translateX(0);
+        transform: translateX(-500px);
     }
     50%{
-        transform: translateX(700%);
+        transform: translateX(500%);
     }
     100%{
-        transform: translateX(0);
+        transform: translateX(-500px);
     }
 }
 
 
 .animToRight{
-    animation: autoSlideToRight 20s infinite ease-in;
+    animation: autoSlideToRight 20s infinite ease-in-out;
     animation-delay: 2s;
 }
 @keyframes autoSlideToRight {
     0%{
-        transform: translateX(0);
+        transform: translateX(500px);
     }
     50%{
-        transform: translateX(-700%);
+        transform: translateX(-500%);
     }
     100%{
-        transform: translateX(0);
+        transform: translateX(500px);
     }
 }
 

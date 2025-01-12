@@ -802,6 +802,6 @@ hr {
         transform: translateX(200px);
     }
     .logo-mobile{
-        transform: translateX(-200px);
+        transform: translateX(-400px);
     }
 }
