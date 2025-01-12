@@ -695,10 +695,6 @@ hr {
 /* Media Respondsif */
 
 @media only screen and (max-width: 1024px) {
-    .title-hero {
-        margin-top: 50%;
-    }
-
     iframe {
         border: 1px solid black;
         border-radius: 20px;
@@ -713,10 +709,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .title-hero {
-        margin-top: 70%;
-    }
+@media (max-width: 768px) {
     .flowAni-1{
         top: 10%;
         left: -70%;
