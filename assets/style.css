@@ -76,7 +76,7 @@ img{
     background-color: #EFE8E3;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -593,7 +593,7 @@ img{
     border-bottom: 3px solid var(--warna-utama);
 }
 
-.input-name {
+.input-nama {
     width: 100%;
     padding: 10px;
     font-size: 15px;
@@ -754,15 +754,30 @@ hr {
         font-size: 20px;
     }
     .png-bungaCantik-2{
-        transform: translateX(150px);
+        transform: translateX(200px);
+        transform: translateY(500px);
+        opacity: 0.6;
     }
     .png-bungaCoklat-3{
         right: 20px;
         transform: translateX(-150px);
-        /* transform: translateY(200px); */
     }
     .png-bungaCoklat-1{
         transform: scale(0.5) rotate(100deg);
+    }
+    .alamat{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .png-line{
+        width: 2px;
+        margin-top: 40px;
+    }
+    .parag-tentang{
+        font-size: 20px;
+    }
+    .desc-tentang p{
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 425px) {
