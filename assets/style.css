@@ -343,7 +343,7 @@ img{
 
 .card-data-analisy{
     padding: 15px;
-    width: 150px;
+    width: 200px;
     background-color: var(--warna-latar-kedua);
     color: var(--warna-kedua);
     transition: all ease-in .2s;
@@ -355,11 +355,11 @@ img{
 }
 
 .card-data-analisy h3{
-    font-size: 25px;
+    font-size: 30px;
     font-family: var(--font-DM-display);
 }
 .card-data-analisy h6{
-    font-size: 15px;
+    font-size: 20px;
     font-family: var(--font-DM-display);
 }
 
