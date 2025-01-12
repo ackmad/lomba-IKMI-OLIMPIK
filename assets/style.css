@@ -9,6 +9,7 @@
 :root {
     --warna-utama: #744D31;
     --warna-latar: #EFE8E3;
+    --warna-latar-kedua: #FAF6F3;
     --warna-utama-muda: #BB9D88;
     --warna-kedua: #DFD0C6;
 
@@ -19,85 +20,116 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
     background-color: var(--warna-latar);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
     font-family: var(--font-DM-sans);
+}
+
+img{
     -webkit-user-drag: none;
     user-select: none;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.df{
+.df {
     display: flex;
 }
 
-.container{
-    padding: 10% 5%;
+.container {
+    padding: 5% 5%;
+    position: relative;
 }
 
-.btn{
+.btn {
     padding: 10px 15px;
     border-radius: 5px;
     color: #fff;
     background-color: #744D31;
     border: none;
-    transition: .1s all ease;
+    transition: .3s all ease;
     cursor: pointer;
     display: block;
 }
 
-.btn:hover{
-    transform: scale(1.15);
+.btn:hover {
+    transform: scale(0.95);
 }
 
 /* Start Navbar */
 
-.navbar{
+.navbar {
     background-color: #EFE8E3;
     position: fixed;
     width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.nav-menus{
+.navbar-toggle {
+    display: block;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #744D31;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-menus {
     display: flex;
     justify-content: center;
     width: 100%;
     list-style: none;
     padding: 15px 0;
-    gap: 10px;
+    gap: 20px;
 }
 
-.nav-menus li{
+.nav-menus li {
     padding: 10px;
-    
-    a{
-        padding: 10px;
-        text-decoration: none;
-        color: #744D31;
-    }
+}
+
+.nav-menus li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #744D31;
+    font-family: var(--font-DM-display);
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-menus li a:hover {
+    color: #AB8D77;
 }
 
 /* End Navbar */
 
 /* Start Hero Section */
 
-#hero-section{
-    height: 95vh;
+#hero-section {
+    height: 100vh;
     background-image: url("../assets/images/bg-Header.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -106,51 +138,51 @@ body{
     color: #fff;
 }
 
-.flowText{
+.flowText {
     position: absolute;
     font-size: 100px;
     color: transparent;
-    -webkit-text-stroke: 2px #ffffff86;
+    -webkit-text-stroke: 2px #ffffff4c;
     font-family: "Raleway", serif;
 }
 
-.flowAni-1{
+.flowAni-1 {
     top: 20%;
-    left: -10%;
+    left: -30%;
 
 }
 
-.flowAni-2{
+.flowAni-2 {
     top: 40%;
-    right: -10%;
+    right: -40%;
 
 }
 
-.title-hero{
+.title-hero {
     text-align: center;
     font-size: 50px;
     font-family: 'parslay';
     margin-top: 20%;
 }
 
-.parag-hero{
+.parag-hero {
     font-family: "Reenie Beanie", serif;
     text-align: center;
     font-size: 35px;
     margin: 20px 0;
 }
 
-.btn-bookNow{
+.btn-bookNow {
     margin-top: 10%;
     font-size: 15px;
     background-color: #AB8D77;
     margin: 0px auto;
 }
 
-.svg-hero{
+.svg-hero {
     width: 100%;
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     left: 0;
 }
 
@@ -158,14 +190,14 @@ body{
 
 /* Start Tentang Kami */
 
-.title-tentang{
+.title-tentang {
     font-size: 30px;
     color: var(--warna-utama);
     font-family: var(--font-DM-display);
     margin-bottom: 10px;
 }
 
-.png-line{
+.png-line {
     display: block;
     margin: 0 auto;
     width: 5px;
@@ -173,63 +205,572 @@ body{
     margin-bottom: 10px;
 }
 
-.parag-tentang{
+.parag-tentang {
     font-size: 25px;
     text-transform: uppercase;
     color: var(--warna-utama-muda);
     font-family: var(--font-DM-text);
 }
 
-.desc-tentang{
+.desc-tentang {
     gap: 30px;
     color: var(--warna-utama-muda);
     margin-top: 40px;
 
-    p{
+    p {
         font-family: var(--font-DM-text);
         font-size: 20px;
     }
 }
 
-.section-organizer{
-    width: 100%;
-    height: 300px;
-    padding: 15px 5%;
-    background-color: var(--warna-kedua);
-    /* overflow: auto; */
-    z-index: 3;
-    position: relative;
-}
-
-.section-organizer img{
-    position: absolute;
-    top: -50px;
-}
-
-.analisy-grids{
+.analisy-grids {
     margin-left: 35%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.grid-text{
-    height: 100px;
-    width: 150px;
-    background-color: #fff;
+.grid-text {
+    /* height: 50px; */
+    width: 180px;
+    padding: 15px;
+    background-color: var(--warna-latar-kedua);
 }
 
-.grid-text h4{
-    font-size: 25px;
+.grid-text h4 {
+    font-size: 40px;
     font-family: var(--font-raleway);
     color: var(--warna-utama);
     font-weight: 700;
+
+    span {
+        font-size: 20px;
+        font-weight: 300;
+    }
 }
-.grid-text h3{
-    font-size: 25px;
+
+.grid-text h3 {
+    font-size: 18px;
     font-family: var(--font-raleway);
     color: var(--warna-utama);
-    font-weight: 100;
+    font-weight: 300;
+}
+
+.section-organizer{
+    display: flex;
+
 }
 
 /* End Tentang Kami */
+
+/* Start Layanan */
+
+.title-layanan {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama-muda);
+}
+
+.subtitle-layanan {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama);
+}
+
+.container-cards-layanan {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-layanan {
+    width: 350px;
+}
+
+.card-layanan>img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-layanan h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: var(--font-DM-sans);
+    font-weight: 300;
+    color: var(--warna-utama);
+    height: 80px;
+}
+
+.card-layanan p {
+    font-size: 15px;
+    text-align: center;
+    font-family: var(--font-DM-sans);
+    font-weight: 300;
+    color: var(--warna-utama-muda);
+    margin-bottom: 20px;
+}
+
+.card-layanan a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.photo-wedding{
+    margin-right: 30px;
+}
+
+.desc-analisy h1{
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    color: var(--warna-utama);
+}
+
+.container-cards-data{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-data-analisy{
+    padding: 15px;
+    width: 150px;
+    background-color: var(--warna-latar-kedua);
+    color: var(--warna-kedua);
+    transition: all ease-in .2s;
+}
+
+.card-data-analisy:hover{
+    background-color: var(--warna-kedua);
+    color: var(--warna-utama);
+}
+
+.card-data-analisy h3{
+    font-size: 25px;
+    font-family: var(--font-DM-display);
+}
+.card-data-analisy h6{
+    font-size: 15px;
+    font-family: var(--font-DM-display);
+}
+
+/* End Layanan */
+
+/* Start Portfolio */
+
+.container-portfolio {
+    padding: 20px 5%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.title-portfolio {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama-muda);
+}
+
+.subtitle-portfolio {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama);
+}
+
+.container-cards-portfolio {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.card-portfolio img {
+    border-radius: 5px;
+    width: 230px;
+}
+
+.card-portfolio h3 {
+    text-align: center;
+    font-family: var(--font-DM-display);
+    font-size: 25px;
+    width: 230px;
+    color: var(--warna-utama);
+}
+
+/* End Portfolio */
+
+/* Start Paket */
+
+.title-paket {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama-muda);
+}
+
+.subtitle-paket {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama);
+}
+
+.container-cards-paket {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.card-paket {
+    width: 400px;
+    background-color: var(--warna-latar-kedua);
+    padding: 20px;
+}
+
+.border-paket {
+    padding: 40px;
+    border: 1px solid var(--warna-utama-muda);
+}
+
+.card-paket h3 {
+    text-align: center;
+    font-family: var(--font-DM-display);
+    font-size: 25px;
+    color: var(--warna-utama);
+}
+
+.card-paket h1 {
+    text-align: center;
+    font-family: var(--font-DM-display);
+    font-size: 60px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    color: var(--warna-utama);
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.list-paket {
+    color: var(--warna-utama);
+    text-align: center;
+    list-style: none;
+    margin-bottom: 50px;
+
+    li {
+        font-family: var(--font-DM-display);
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+.card-paket img {
+    margin: 30px auto;
+    display: block;
+    width: 250px;
+}
+
+.card-paket .btn-pesanSekarang {
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: var(--warna-utama-muda);
+}
+
+.card-paket .link-selengkatnya {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: var(--warna-utama-muda);
+}
+
+.costumize-paket {
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    color: var(--warna-utama);
+}
+
+
+/* End Paket */
+
+/* Start Kontak */
+
+.title-kontak {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama-muda);
+}
+
+.subtitle-kontak {
+    font-family: var(--font-DM-display);
+    font-size: 30px;
+    text-align: center;
+    color: var(--warna-utama);
+}
+
+.container-kontak {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.info-side-kontak {
+    width: 33%;
+}
+
+.info-side-kontak h1 {
+    font-family: var(--font-DM-text);
+    color: var(--warna-utama);
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.info-side-kontak p {
+    color: var(--warna-utama-muda);
+}
+
+.info-card {
+    display: flex;
+    margin: 20px;
+}
+
+.info-card img {
+    margin-right: 20px;
+}
+
+.info-card .desc-info h4 {
+    font-family: var(--font-DM-display);
+    color: var(--warna-utama);
+    font-size: 20px;
+}
+
+.maps-side-kontak {
+    width: 33%;
+}
+
+.pesan-side-kontak {
+    width: 33%;
+}
+
+.card-pesan {
+    padding: 40px;
+    background-color: var(--warna-latar-kedua);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.title-card-pesan {
+    font-family: var(--font-DM-display);
+    color: var(--warna-utama);
+    font-size: 30px;
+    text-align: center;
+}
+
+:focus {
+    outline: var(--warna-utama);
+    border-bottom: 3px solid var(--warna-utama);
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.input-pesan {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.card-pesan p {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.btn-pesan {
+    padding: 10px 50px;
+    margin-top: 40px;
+    background-color: var(--warna-utama-muda);
+    color: #fff;
+}
+
+iframe {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 80%;
+}
+
+/* End Kontak */
+
+/* Start Footer */
+
+.container-footer {
+    background-color: var(--warna-latar-kedua);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.navfooter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.navfooter-menus {
+    display: flex;
+}
+
+.navfooter-menus li {
+    padding: 10px;
+    font-size: 20px;
+    list-style: none;
+
+    a {
+        color: var(--warna-utama);
+        text-decoration: none;
+    }
+}
+
+.alamat {
+    color: var(--warna-utama);
+    font-size: 20px;
+    width: 40%;
+}
+
+.jam {
+    color: var(--warna-utama);
+    font-size: 20px;
+    width: 40%;
+}
+
+.jam ul {
+    margin-left: 50px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.tomyweb {
+    color: var(--warna-utama);
+    text-decoration: none;
+}
+
+/* End Footer */
+
+
+
+/* Media Respondsif */
+
+@media only screen and (max-width: 1024px) {
+    .title-hero {
+        margin-top: 50%;
+    }
+
+    iframe {
+        border: 1px solid black;
+        border-radius: 20px;
+        /* margin: 10px; */
+        width: 100%;
+    }
+
+    
+    .png-bungaCoklat-3{
+        left: 200px !important;
+        transform: rotate(180deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title-hero {
+        margin-top: 70%;
+    }
+    .flowAni-1{
+        top: 10%;
+        left: -70%;
+    }
+    .flowAni-2{
+        top: 20%;
+        right: -80%;
+    }
+    .navfooter-menus li a{
+        font-size: 15px;
+    }
+    .container-kontak{
+        flex-direction: column;
+    }
+    .info-side-kontak, .maps-side-kontak, .pesan-side-kontak{
+        width: 100%;
+    }
+    .container-footer .jam{
+        width: 80%;
+    }
+    .container-footer .jam ul{
+        width: 100%;
+    }
+    .png-bungaCoklat-3{
+        left: 150px !important;
+        transform: rotate(180deg);
+    }
+    .card-layanan {
+        width: 200px;
+    }
+    .nav-menus li{
+        padding: 2px;
+    }
+    .card-layanan h2{
+        font-size: 20px;
+    }
+    .png-bungaCantik-2{
+        transform: translateX(150px);
+    }
+    .png-bungaCoklat-3{
+        right: 20px;
+        transform: translateX(-150px);
+        /* transform: translateY(200px); */
+    }
+    .png-bungaCoklat-1{
+        transform: scale(0.5) rotate(100deg);
+    }
+}
+@media only screen and (max-width: 425px) {
+
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 320px) {
+
+}

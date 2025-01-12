@@ -1,0 +1,40 @@
+.png{
+    position: absolute;
+    width: 200px;
+}
+
+.png-bungaCoklat-1{
+    left: -40px;
+    top: 80px;
+}
+.png-bungaCoklat-2{
+    right: 30px;
+    top: 500px;
+    width: 100px;
+}
+.png-bungaCantik-1{
+    z-index: 3;
+    left: 350px;
+    top: -10px;
+    width: 200px;
+}
+.png-bungaCantik-2{
+    z-index: 3;
+    right: 150px;
+    top: 100px;
+    width: 150px;
+}
+.png-bungaCoklat-3{
+    z-index: 3;
+    left: 400px;
+    width: 100px;
+    filter: blur(2px);
+}
+.png-bungaCoklat-4{
+    z-index: 3;
+    left: 100px;
+    top: 400px;
+    width: 100px;
+    filter: blur(4px);
+    /* transform: rotateX('400deg'); */
+}

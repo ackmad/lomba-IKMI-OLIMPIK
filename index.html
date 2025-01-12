@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEDDING TOMORROW | Best Wedding Organizer</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/animation.css">
+    <link rel="stylesheet" href="assets/part-abolute.css">
+    <link rel="stylesheet" href="assets/navbar.css">
+    <link rel="stylesheet" href="assets/part-abolute.css">
+    <link rel="stylesheet" href="assets/navbar.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <ul class="nav-menus">
-            <li><a href="#hero-section">Beranda</a></li>
-            <li><a href="#about">Tentang Kami</a></li>
-            <img src="assets/images/image-removebg-preview 1.png" alt="logo-weddingTomorrow" width="100px">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+        <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <img src="assets/images/logo.png" alt="logo-weddingTomorrow" width="100px" class="animScaleUp logo-mobile" >
+        <ul class="nav-menus" id="nav-menus">
+            <li><a href="#hero-section" class="animFadeIn">Beranda</a></li>
+            <li><a href="#about" class="animFadeIn">Tentang Kami</a></li>
+            <li><a href="#layanan" class="animFadeIn">Layanan</a></li>
+            <img src="assets/images/logo.png" alt="logo-weddingTomorrow" width="100px" class="animScaleUp logo-pc">
+            <li><a href="#portfolio" class="animFadeIn">Portfolio</a></li>
+            <li><a href="#paket" class="animFadeIn">Paket Harga</a></li>
+            <li><a href="#kontak" class="animFadeIn">Kontak</a></li>
         </ul>
     </div>
 
     <!-- Hero Section -->
     <div class="container" id="hero-section">
-        <h1 class="flowText flowAni-1">WEDDING</h1>
-        <h1 class="flowText flowAni-2">WEDDING</h1>
+        <h1 class="flowText flowAni-1 animToLeft">WEDDING</h1>
+        <h1 class="flowText flowAni-2 animToRight">TOMORROW</h1>
         <h1 class="title-hero">SHE SAID YESS!</h1>
         <p class="parag-hero">Biarkan kami menciptakan pernikahan yang selalu kamu impikan, di mana setiap detail mencerminkan kisah cinta kalian, dan setiap momen menjadi kenangan berharga seumur hidup!</p>
         <button class="btn btn-bookNow">Book Sekarang</button>
@@ -32,51 +45,290 @@
     </div>
 
     <!-- Tentang Kami -->
-     <div class="container" id="about">
+    <div class="container" id="about">
+        <img src="assets/images/png-bungaCoklat.png" class="png png-bungaCoklat-1">
+        <img src="assets/images/png-bungaCoklat.png" class="png png-bungaCoklat-2">
         <img src="assets/images/line.png" class="png-line">
-        <h1 class="text-center title-tentang">Tentang Kami!</h1>
-        <p class="text-center parag-tentang">Selamat datang di WEDDING TOMORROW, wedding organizer yang siap mewujudkan pernikahan impian Anda. Kami berkomitmen untuk mengatur setiap detail acara dengan sempurna, memberikan Anda pengalaman pernikahan yang indah dan tanpa stres.</p>
+        <h1 class="text-center title-tentang animShow">Tentang Kami!</h1>
+        <p class="text-center parag-tentang animShow">Selamat datang di WEDDING TOMORROW, wedding organizer yang siap mewujudkan
+            pernikahan impian Anda. Kami berkomitmen untuk mengatur setiap detail acara dengan sempurna, memberikan Anda
+            pengalaman pernikahan yang indah dan tanpa stres.</p>
 
-        <div class="df desc-tentang">
-            <p>Kami menawarkan layanan lengkap, termasuk dekorasi, make-up, fotografi, videografi, catering, dan koordinasi acara, semua dapat disesuaikan dengan anggaran dan kebutuhan Anda.</p>
-            <p>Pilih WEDDING TOMORROW karena kami memberikan perhatian khusus pada setiap detail pernikahan Anda, memastikan momen yang tak terlupakan dengan layanan yang dipersonalisasi.</p>
+        <div class="df desc-tentang animShow">
+            <p>Kami menawarkan layanan lengkap, termasuk dekorasi, make-up, fotografi, videografi, catering, dan
+                koordinasi acara, semua dapat disesuaikan dengan anggaran dan kebutuhan Anda.</p>
+            <p>Pilih WEDDING TOMORROW karena kami memberikan perhatian khusus pada setiap detail pernikahan Anda,
+                memastikan momen yang tak terlupakan dengan layanan yang dipersonalisasi.</p>
         </div>
-     </div>
+    </div>
 
-     <div class="section-organizer df">
-        <img src="assets/images/photo-wedding_organizer.png" alt="photo-wedding_organizer">
-        <div class="analisy-grids">
-            <div class="grid-text">
-                <h4>200+</h4>
-                <h3>Pernikahan</h3>
-            </div>
-            <div class="grid-text">
-                <h4>200+</h4>
-                <h3>Pernikahan</h3>
-            </div>
-            <div class="grid-text">
-                <h4>200+</h4>
-                <h3>Pernikahan</h3>
-            </div>
-            <div class="grid-text">
-                <h4>200+</h4>
-                <h3>Pernikahan</h3>
-            </div>
-            <div class="grid-text">
-                <h4>200+</h4>
-                <h3>Pernikahan</h3>
-            </div>
-            <div class="grid-text">
-                <h4>200+</h4>
-                <h3>Pernikahan</h3>
+    <div class="section-organizer container">
+        <img src="assets/images/photo-wedding_organizer.png" class="photo-wedding" width="500px">
+        <img src="assets/images/png-bungaCantik.png" class="png png-bungaCantik-1">
+        <div class="desc-analisy">
+            <h1>Angka yang Berbicara<br>
+                Bukti Kepercayaan dan Kepuasan Pelanggan</h1>
+            <div class="container-cards-data">
+                <div class="card-data-analisy">
+                    <h3>200+</h3>
+                    <h6>Acara Sukses</h6>
+                </div>
+                <div class="card-data-analisy">
+                    <h3>10+</h3>
+                    <h6>Tahun Industri</h6>
+                </div>
+                <div class="card-data-analisy">
+                    <h3>50+</h3>
+                    <h6>Anggota Profesional</h6>
+                </div>
+                <div class="card-data-analisy">
+                    <h3>95%</h3>
+                    <h6>Kepuasan</h6>
+                </div>
+                <div class="card-data-analisy">
+                    <h3>300+</h3>
+                    <h6>Ulasan Positif</h6>
+                </div>
             </div>
         </div>
-     </div>
+    </div>
 
-     
+    <!-- Layanan -->
+    <div id="layanan" class="container">
+        <h1 class="title-layanan animZoomIn">Layanan</h1>
+        <h1 class="subtitle-layanan animZoomIn">Layanan Eksklusif untuk Hari Special Anda</h1>
+        <div class="container-cards-layanan">
+            <div class="card-layanan animBounceIn animSlideInLeft">
+                <img src="assets/images/icon-perlengkapan.png" alt="" width="80px">
+                <h2>Perencanaan Pernikahan Lengkap</h2>
+                <p>Kami menyediakan layanan perencanaan pernikahan dari awal hingga akhir, mencakup semua aspek mulai dari konsep tema, pengelolaan anggaran, hingga eksekusi acara.</p>
+                <a href="">Selengkapnya <img src="assets/images/arrow.svg" alt="icon-arrow"></a>
+            </div>
+            <div class="card-layanan animBounceIn animSlideInRight">
+                <img src="assets/images/icon-vendor.png" alt="" width="80px">
+                <h2>Konsultasi Vendor</h2>
+                <p>Kami bekerja sama dengan vendor terbaik untuk catering, dekorasi, fotografi, musik, dan lainnya, membantu Anda memilih vendor yang sesuai dengan gaya dan anggaran Anda.</p>
+                <a href="">Selengkapnya <img src="assets/images/arrow.svg" alt="icon-arrow"></a>
+            </div>
+            <div class="card-layanan animBounceIn animSlideInRight">
+                <img src="assets/images/icon-managemen.png" alt="" width="80px">
+                <h2>Manajemen Acara</h2>
+                <p>Tim kami akan hadir di lokasi pada hari pernikahan untuk memastikan semua berjalan sesuai rencana, sehingga Anda dapat menikmati hari Anda tanpa stres.</p>
+                <a href="" class="selengkapnya">Selengkapnya <img src="assets/images/arrow.svg" alt="icon-arrow"></a>
+            </div>
+            <div class="card-layanan animBounceIn animSlideInLeft">
+                <img src="assets/images/icon-dekorasi.png" alt="" width="80px">
+                <h2>Dekorasi dan Desain</h2>
+                <p>Kami menyediakan layanan dekorasi yang disesuaikan dengan tema pilihan Anda, mencakup elemen seperti bunga, tata letak meja, dan pencahayaan.</p>
+                <a href="" class="selengkapnya">Selengkapnya <img src="assets/images/arrow.svg" alt="icon-arrow"></a>
+            </div>
+            <div class="card-layanan animBounceIn animSlideInLeft">
+                <img src="assets/images/icon-paket.png" alt="" width="80px">
+                <h2>Paket Pernikahan</h2>
+                <p>Kami menyediakan layanan perencanaan pernikahan dari awal hingga akhir, mencakup semua aspek mulai
+                    dari konsep tema, pengelolaan anggaran, hingga eksekusi acara.</p>
+                <a href="" class="selengkapnya">Selengkapnya <img src="assets/images/arrow.svg" alt="icon-arrow"></a>
+            </div>
+            <div class="card-layanan animBounceIn animSlideInRight">
+                <img src="assets/images/icon-mobil.png" alt="" width="80px">
+                <h2>Pengaturan Transportasi dan Akomodasi</h2>
+                <p>Kami membantu mengatur transportasi untuk tamu dan akomodasi bagi keluarga dekat, memastikan mereka merasa nyaman dan terlayani dengan baik.</p>
+                <a href="" class="selengkapnya">Selengkapnya <img src="assets/images/arrow.svg" alt="icon-arrow"></a>
+            </div>
+        </div>
+    </div>
 
-        
-        <script src="assets/script.js"></script>
+    <!-- Portfolio -->
+
+    <div id="portfolio" class="container">
+        <div class="container-portfolio">
+            <h1 class="title-portfolio animZoomIn">Portfolio</h1>
+            <h1 class="subtitle-portfolio animZoomIn">Kami mengadakan pernikahan yang indah kemarin</h1>
+            <div class="container-cards-portfolio">
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-maqam.png" alt="">
+                    <h3>Pernikahan Arab Maqam</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-sunda.png" alt="">
+                    <h3>Pernikahan Tradisional Sunda</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-arab_modern.png" alt="">
+                    <h3>Pernikahan Arab Modern</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-jawa.png" alt="">
+                    <h3>Pernikahan Adat Jawa</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-ballroom.png" alt="">
+                    <h3>Pernikahan Ballroom Mewah</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-minangkabau.png" alt="">
+                    <h3>Pernikahan Minangkabau</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-modern.png" alt="">
+                    <h3>Pernikahan Modern Elegan</h3>
+                </div>
+                <div class="card-portfolio animFlipIn">
+                    <img src="assets/images/fotoPorfolio-outdor.png" alt="">
+                    <h3>Pernikahan Outdoor di Pantai</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paket" class="container">
+        <img src="assets/images/png-bungaCantik.png" class="png png-bungaCantik-2">
+        <img src="assets/images/png-bungaCoklat.png" class="png png-bungaCoklat-3">
+        <img src="assets/images/png-bungaCoklat.png" class="png png-bungaCoklat-4">
+        <div class="title-paket animZoomIn">Harga</div>
+        <div class="subtitle-paket animZoomIn">Pilihan Paket Pernikahan</div>
+        <div class="container-cards-paket">
+            <div class="card-paket animSlideInBottom">
+                <div class="border-paket">
+                    <h3>Cahaya Cinta</h3>
+                    <h1><span>Rp</span>50jt</h1>
+                    <img src="assets/images/Line2.png" alt="" class="">
+                    <ul class="list-paket">
+                        <li>Konsultasi Lengkap</li>
+                        <li>Dekorasi Lengkat</li>
+                        <li>Fotografi & videografi</li>
+                        <li>Catering premium</li>
+                    </ul>
+                    <button class="btn btn-pesanSekarang">Pesan Sekarang</button>
+                    <a href="" class="link-selengkatnya">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card-paket animSlideInTop">
+                <div class="border-paket">
+                    <h3>Harmoni Tradisi</h3>
+                    <h1><span>Rp</span>40jt</h1>
+                    <img src="assets/images/Line2.png" alt="" class="">
+                    <ul class="list-paket">
+                        <li>Konsultasi tradisional</li>
+                        <li>Dekorasi adat modern</li>
+                        <li>Busana pengantin tradisional</li>
+                        <li>Hiburan tradisional</li>
+                        <li>Catering khas daerah</li>
+                    </ul>
+                    <button class="btn btn-pesanSekarang">Pesan Sekarang</button>
+                    <a href="" class="link-selengkatnya">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="card-paket animSlideInBottom">
+                <div class="border-paket">
+                    <h3>Mewah Eksklusif</h3>
+                    <h1><span>Rp</span>75jt</h1>
+                    <img src="assets/images/Line2.png" alt="" class="">
+                    <ul class="list-paket">
+                        <li>Konsultasi personal</li>
+                        <li>Dekorasi mewah custom</li>
+                        <li>Hiburan kelas atas</li>
+                        <li>Catering fine dining</li>
+                        <li>Fotografi cinematic</li>
+                    </ul>
+                    <button class="btn btn-pesanSekarang">Pesan Sekarang</button>
+                    <a href="" class="link-selengkatnya">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="costumize-paket">Ciptakan Pernikahan Impian Anda, Sesuai Keinginan</a>
+    </div>
+
+
+    <!-- Kontak -->
+    <div id="kontak" class="container">
+        <div class="title-kontak animZoomIn">Kontak</div>
+        <div class="subtitle-kontak animZoomIn">Kontak kami jika mau nikah</div>
+
+        <div class="container-kontak">
+            <div class="info-side-kontak animShow">
+                <h1>Kontak Kami</h1>
+                <p>Jika Anda memiliki pertanyaan, saran, atau ingin mulai merencanakan pernikahan impian Anda, jangan ragu untuk menghubungi kami. Tim kami yang berpengalaman siap membantu Anda menciptakan momen pernikahan yang tak terlupakan.
+
+                </p>
+                <div class="info-card">
+                    <img src="assets/images/icon-alamat.svg" alt="" width="50px">
+                    <div class="desc-info">
+                        <h4>Alamat</h4>
+                        <p>Jl. Permata Indah No. 8, Kel. Elite, Kec. Mewah, Jakarta Selatan 12190</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="assets/images/icon-gmail.svg" alt="" width="50px">
+                    <div class="desc-info">
+                        <h4>Email</h4>
+                        <p>info@weddingorganizer.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="assets/images/icon-telepon.svg" alt="" width="50px">
+                    <div class="desc-info">
+                        <h4>Telepon</h4>
+                        <p>+62 812-3456-7890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="maps-side-kontak animShow">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.3346691221955!2d108.52722687617798!3d-6.728959293267135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1dca1897ab57%3A0x6cabfa2de38978e7!2sUlen%20Neng%20Bia!5e0!3m2!1sid!2sid!4v1723794371071!5m2!1sid!2sid"
+                    height="450" style=""
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="pesan-side-kontak animShow">
+                <div class="card-pesan">
+                    <h1 class="title-card-pesan">Kirim Pesan</h1>
+                    <input type="text" placeholder="Nama Anda" class="input-name"><br>
+                    <textarea name="" id="" placeholder="Isi Pesan" class="input-pesan"></textarea>
+                    <p>Setiap pesan yang Anda kirimkan melalui formulir ini akan langsung diteruskan ke WhatsApp kami, sehingga Anda dapat menerima tanggapan yang cepat dan langsung.</p>
+                    <button class="btn btn-pesan">Kirim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="container">
+        <div class="container-footer">
+            <div class="navfooter">
+                <img src="assets/images/logo.png" alt="" width="200px">
+                <div class="navbar-toggle" id="navbar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>        
+                <ul class="navfooter-menus">
+                    <li><a href="#hero-section">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#paket">Paket Harga</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            <p class="alamat">
+                Jl. Permata Indah No. 8, Kel. Elite, Kec. Mewah, Jakarta Selatan 12190
+            </p>
+            <div class="jam">
+                Jam Operasional Costumer Services :
+                <ul>
+                    <li>Senin - Jumat: 09.00 - 18.00</li>
+                    <li>Sabtu: 10.00 - 16.00</li>
+                    <li>Minggu: Libur</li>
+                </ul>
+            </div>
+            <hr>
+            <a href="https://ackmad.github.io/" target="_blank" class="tomyweb">Copyright © 2025 - FANTHEXAIN (Ackmad
+                Elfan Purnama)</a>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
